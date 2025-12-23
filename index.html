@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Cute Space</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  
+  <body class="bg-milk font-cute text-cocoa min-h-screen flex items-center justify-center p-4 selection:bg-sakura selection:text-white relative overflow-hidden">
+
+    <div id="floating-container" class="absolute inset-0 pointer-events-none overflow-hidden"></div>
+
+    <div class="max-w-md w-full bg-white rounded-[40px] p-8 border-4 border-cocoa shadow-soft relative z-10 transform hover:scale-[1.01] transition-transform duration-300">
+      
+      <div class="absolute -top-5 -right-5 bg-sakura w-24 h-24 rounded-full flex items-end justify-center pb-5 rotate-12 shadow-sm border-4 border-white">
+        <span class="text-white font-bold text-sm tracking-widest">HI!</span>
+      </div>
+
+      <div class="flex flex-col items-center mb-6 mt-2">
+        <div class="w-32 h-32 bg-sky rounded-full border-4 border-cocoa p-1 mb-4 relative hover:rotate-6 transition-transform duration-300 cursor-pointer">
+          <img src="/avatar.jpg" alt="Avatar" class="w-full h-full rounded-full bg-white object-cover">
+          <div class="absolute bottom-0 right-0 w-8 h-8 bg-matcha rounded-full border-4 border-cocoa flex items-center justify-center">
+            <span class="text-[10px]">✨</span>
+          </div>
+        </div>
+        
+        <h1 class="text-3xl font-bold mb-2 tracking-tight">小楼的小窝</h1>
+        <div class="flex gap-2">
+          <span class="bg-lavender/30 px-3 py-1 rounded-full text-xs font-bold border-2 border-transparent hover:border-lavender transition-all">
+            🎨 Design
+          </span>
+          <span class="bg-matcha/30 px-3 py-1 rounded-full text-xs font-bold border-2 border-transparent hover:border-matcha transition-all">
+            💻 Code
+          </span>
+        </div>
+      </div>
+
+      <div class="text-center mb-8 text-lg font-medium leading-relaxed">
+  <p>欢迎来到我的<span class="text-sakura font-bold">数字花园</span> 🌱</p>
+  <p class="text-sm opacity-60 mt-2 h-6">
+    我是 <span id="typewriter" class="text-cocoa font-bold"></span>
+    <span class="animate-pulse">|</span> </p>
+       </div>
+
+      <div class="space-y-3">
+        <a href="#" class="group block bg-milk hover:bg-sky border-2 border-cocoa rounded-2xl p-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex items-center gap-4">
+          <div class="bg-white w-10 h-10 rounded-full border-2 border-cocoa flex items-center justify-center text-xl group-hover:rotate-12 transition-transform">🏠</div>
+          <span class="font-bold">访问主页</span>
+        </a>
+
+        <a href=https://www.xiaohongshu.com/user/profile/64a4ea17000000001c0299f1 class="group block bg-milk hover:bg-sakura border-2 border-cocoa rounded-2xl p-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex items-center gap-4">
+          <div class="bg-white w-10 h-10 rounded-full border-2 border-cocoa flex items-center justify-center text-xl group-hover:-rotate-12 transition-transform">📝</div>
+          <span class="font-bold">我的博客</span>
+        </a>
+        
+        <a href="https://github.com/LouYaxiao" class="group block bg-milk hover:bg-matcha border-2 border-cocoa rounded-2xl p-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex items-center gap-4">
+          <div class="bg-white w-10 h-10 rounded-full border-2 border-cocoa flex items-center justify-center text-xl group-hover:scale-110 transition-transform">🐱</div>
+          <span class="font-bold">GitHub</span>
+        </a>
+      </div>
+
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
